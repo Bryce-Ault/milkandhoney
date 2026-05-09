@@ -1,38 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <!-- Background circle -->
-  <circle cx="32" cy="32" r="32" fill="#2c1a0e"/>
-
-  <!-- Steam wisps -->
-  <path d="M24 14 Q22 10 24 6 Q26 2 24 0" stroke="#d4a96a" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.85"/>
-  <path d="M32 14 Q30 10 32 6 Q34 2 32 0" stroke="#d4a96a" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.85"/>
-  <path d="M40 14 Q38 10 40 6 Q42 2 40 0" stroke="#d4a96a" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.85"/>
+  <!-- Steam -->
+  <path d="M22 12 Q20 8 22 4" stroke="#6b3a1f" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M32 12 Q30 8 32 4" stroke="#6b3a1f" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M42 12 Q40 8 42 4" stroke="#6b3a1f" stroke-width="2.5" stroke-linecap="round"/>
 
   <!-- Cup body -->
-  <path d="M16 22 L20 50 Q20 52 22 52 L42 52 Q44 52 44 50 L48 22 Z" fill="#f5deb3"/>
-  <path d="M16 22 L20 50 Q20 52 22 52 L42 52 Q44 52 44 50 L48 22 Z" fill="url(#cupGrad)"/>
+  <path d="M14 18 L19 52 Q19.5 55 23 55 L41 55 Q44.5 55 45 52 L50 18 Z" fill="#6b3a1f"/>
 
-  <!-- Cup top rim -->
-  <rect x="14" y="19" width="36" height="5" rx="2.5" fill="#d4a96a"/>
-
-  <!-- Coffee liquid inside cup -->
-  <path d="M18.5 28 L21.5 48 Q21.5 50 23 50 L41 50 Q42.5 50 42.5 48 L45.5 28 Z" fill="#5c3317"/>
-  <ellipse cx="32" cy="28" rx="13.7" ry="2.5" fill="#7a4520"/>
-
-  <!-- Latte art heart on surface -->
-  <path d="M28 31 Q28 29 30 30 Q32 28 34 30 Q36 29 36 31 Q36 34 32 36 Q28 34 28 31 Z" fill="#c87941" opacity="0.7"/>
+  <!-- Rim -->
+  <rect x="12" y="15" width="40" height="6" rx="3" fill="#4a2510"/>
 
   <!-- Handle -->
-  <path d="M44 28 Q54 28 54 36 Q54 44 44 44" stroke="#d4a96a" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M46 26 Q58 26 58 36 Q58 46 46 46" stroke="#4a2510" stroke-width="4" stroke-linecap="round" fill="none"/>
 
   <!-- Saucer -->
-  <ellipse cx="32" cy="54" rx="20" ry="4" fill="#d4a96a"/>
-  <ellipse cx="32" cy="54" rx="14" ry="2.5" fill="#c9a87a"/>
-
-  <defs>
-    <linearGradient id="cupGrad" x1="16" y1="22" x2="48" y2="22" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#2c1a0e" stop-opacity="0.15"/>
-      <stop offset="50%" stop-color="white" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#2c1a0e" stop-opacity="0.2"/>
-    </linearGradient>
-  </defs>
+  <ellipse cx="32" cy="57" rx="22" ry="4" fill="#4a2510"/>
 </svg>
