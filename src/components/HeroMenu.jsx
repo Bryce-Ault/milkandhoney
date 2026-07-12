@@ -48,7 +48,7 @@ export default function HeroMenu() {
       </div>
 
       {/* Content */}
-      <div className="relative z-[1] w-full max-w-[1100px] px-8 py-12 flex flex-col items-center gap-10">
+      <div className="relative z-[1] w-full max-w-[1100px] px-8 pt-[7rem] pb-12 flex flex-col items-center gap-10">
         {/* Headline */}
         <div className="text-center">
           <h1 className="text-cream text-[clamp(2rem,5vw,3.5rem)] tracking-[0.04em] [text-shadow:0_2px_20px_rgba(0,0,0,0.6)] mb-2">

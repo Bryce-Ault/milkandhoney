@@ -21,4 +21,7 @@
     color: var(--color-coffee-brown);
     background-color: var(--color-cream);
   }
+  section[id] {
+    scroll-margin-top: 7rem;
+  }
 }
