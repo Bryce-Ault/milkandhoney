@@ -79,6 +79,22 @@ export default function NextStepsPage() {
             </p>
           </div>
 
+          <div style={cardStyle}>
+            <h2 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '10px', color: '#f0e4cf' }}>
+              It's genuinely yours
+            </h2>
+            <p style={{ color: '#b89a78', lineHeight: 1.65 }}>
+              You get the actual code behind your site, not just access to a locked-in tool.
+              That means you're never stuck with me — you're free to bring in any developer
+              down the road, or take it in a completely different direction whenever you want.
+            </p>
+            <p style={{ color: '#8a7255', lineHeight: 1.65, marginTop: '10px', fontSize: '0.92rem' }}>
+              If you ever want to try making a small change yourself, AI coding tools like
+              Claude Code can walk you through it in plain English — no programming background
+              needed. Totally optional, just nice to know it's an option.
+            </p>
+          </div>
+
         </div>
 
         <p style={{ color: '#8a7255', fontSize: '0.85rem', lineHeight: 1.6 }}>
