@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { menuItems } from '../data/menuItems'
 import { photos } from '../data/photos'
 import SocialLinks from '../components/SocialLinks'
+import HoneyDropMark from '../components/HoneyDropMark'
 import { MapPinIcon, ClockIcon, PhoneIcon } from '../components/InfoIcons'
 
 function GoldenNav() {
@@ -239,7 +240,7 @@ export default function GoldenPage() {
       {/* Footer */}
       <footer className="bg-[#050400] text-center py-8 px-4">
         <div className="flex flex-col items-center gap-[0.4rem]">
-          <span className="text-[1.8rem] text-[#f5c518]">&#9749;</span>
+          <HoneyDropMark size={26} color="#f5c518" outline="#7a5c00" />
           <SocialLinks color="#c8a840" hoverColor="#f5c518" />
           <p className="text-[0.9rem] text-[#c8a840]">© 2026 Milk and Honey &nbsp;|&nbsp; 247 W Main St, Morristown, TN 37814</p>
           <p className="text-[0.82rem] italic text-[#4a3808]">Made with love (and a lot of espresso).</p>

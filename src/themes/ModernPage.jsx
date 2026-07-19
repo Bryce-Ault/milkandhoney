@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { menuItems } from '../data/menuItems'
 import { photos } from '../data/photos'
 import SocialLinks from '../components/SocialLinks'
+import HoneyDropMark from '../components/HoneyDropMark'
 
 function ModernNav() {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -182,7 +183,7 @@ export default function ModernPage() {
         <div className="flex flex-col items-center gap-2">
           <div className="flex items-center gap-3 mb-1">
             <div className="w-8 h-[1px] bg-[#e07b39]" />
-            <span className="text-[#e07b39] text-[1.2rem]">&#9749;</span>
+            <HoneyDropMark size={20} color="#e07b39" outline="#8a4820" />
             <div className="w-8 h-[1px] bg-[#e07b39]" />
           </div>
           <SocialLinks color="#555" hoverColor="#e07b39" />

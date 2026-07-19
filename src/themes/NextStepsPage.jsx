@@ -37,7 +37,9 @@ export default function NextStepsPage() {
               You can update the site yourself — no code needed
             </h2>
             <p style={{ color: '#b89a78', lineHeight: 1.65, marginBottom: '10px' }}>
-              You'll get your own simple dashboard where you can change:
+              You'll get your own simple dashboard (a tool called{' '}
+              <a href="https://www.sanity.io" target="_blank" rel="noopener noreferrer" style={{ color: '#d4a96a', textDecoration: 'underline' }}>Sanity</a>{' '}
+              — free for a site this size) where you can change:
             </p>
             <ul style={{ color: '#b89a78', lineHeight: 1.8, paddingLeft: '20px', margin: 0 }}>
               <li>Hours of operation</li>
@@ -63,8 +65,13 @@ export default function NextStepsPage() {
               for hours, menu, photos, contact info, and map location.
             </p>
             <p style={{ color: '#8a7255', lineHeight: 1.65, fontSize: '0.92rem' }}>
-              Not included: your domain name (typically $10–20/year, paid to a registrar directly —
-              you own it, not me). Hosting itself is free.
+              Not included: your domain name — that's the web address people type to find you,
+              like milkandhoney.com (typically $10–20/year through a registrar; you own it, not me).
+            </p>
+            <p style={{ color: '#8a7255', lineHeight: 1.65, fontSize: '0.92rem', marginTop: '8px' }}>
+              Also not a cost: hosting — the service that keeps your site actually up and running
+              on the internet, 24/7. That's handled through Cloudflare's free tier, which comfortably
+              covers a site like this — you shouldn't ever see a bill for it.
             </p>
           </div>
 
@@ -72,10 +79,15 @@ export default function NextStepsPage() {
             <h2 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '10px', color: '#f0e4cf' }}>
               Free support for 12 months
             </h2>
-            <p style={{ color: '#b89a78', lineHeight: 1.65 }}>
-              For a year after launch, I'll fix bugs and handle small adjustments to the site's
-              existing content or functionality at no charge. New features, added pages, or a
-              redesign would be quoted separately.
+            <p style={{ color: '#b89a78', lineHeight: 1.65, marginBottom: '10px' }}>
+              For a year after launch, small tweaks to what's already there are free — think
+              adjusting colors, swapping the favicon, changing the font, tweaking the layout,
+              fixing something that looks off, or updating wording elsewhere on the page, like
+              the headline or tagline.
+            </p>
+            <p style={{ color: '#8a7255', lineHeight: 1.65, fontSize: '0.92rem' }}>
+              Remember, your hours, menu, contact info, and photos are already yours to update
+              anytime through your own dashboard — you don't need me for those.
             </p>
           </div>
 
