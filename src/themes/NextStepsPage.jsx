@@ -83,6 +83,26 @@ export default function NextStepsPage() {
 
           <div style={cardStyle}>
             <h2 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '10px', color: '#f0e4cf' }}>
+              Don't have a domain yet? Here's where to get one
+            </h2>
+            <p style={{ color: '#b89a78', lineHeight: 1.65, marginBottom: '10px' }}>
+              A domain is just the web address itself — you register it through a company called
+              a "registrar." A few good, reputable options:
+            </p>
+            <ul style={{ color: '#b89a78', lineHeight: 1.8, paddingLeft: '20px', margin: 0 }}>
+              <li><strong style={{ color: '#f0e4cf' }}>Squarespace Domains</strong> — simple and beginner-friendly (what I used for bryceault.dev)</li>
+              <li><strong style={{ color: '#f0e4cf' }}>Namecheap</strong> — reliable, often cheaper, no pushy upsells</li>
+              <li><strong style={{ color: '#f0e4cf' }}>Cloudflare Registrar</strong> — sold at cost with no markup, and pairs directly with the hosting I'm already using for this site</li>
+              <li><strong style={{ color: '#f0e4cf' }}>GoDaddy</strong> — the most recognizable name, but expect upsell prompts during checkout</li>
+            </ul>
+            <p style={{ color: '#8a7255', lineHeight: 1.65, marginTop: '10px', fontSize: '0.92rem' }}>
+              Any of these work fine. Whichever you pick, just send me the domain name once it's
+              registered and I'll connect it to your site.
+            </p>
+          </div>
+
+          <div style={cardStyle}>
+            <h2 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '10px', color: '#f0e4cf' }}>
               Free support for 12 months
             </h2>
             <p style={{ color: '#b89a78', lineHeight: 1.65, marginBottom: '10px' }}>
