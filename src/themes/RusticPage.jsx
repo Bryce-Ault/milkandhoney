@@ -5,7 +5,7 @@ import { photos } from '../data/photos'
 function RusticNav() {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   return (
-    <nav className="fixed top-10 left-0 right-0 z-[100] flex items-center justify-between px-10 py-[0.85rem] max-md:px-5 bg-[#3a5c45]">
+    <nav className="sticky top-10 left-0 right-0 z-[100] flex items-center justify-between px-10 py-[0.85rem] max-md:px-5 bg-[#3a5c45]">
       <div className="flex items-center gap-2">
         <span className="text-[1.4rem] text-[#e8d5b7]">&#9749;</span>
         <span className="text-[1rem] font-bold tracking-[0.02em] text-[#fef8ed]" style={{ fontFamily: 'Georgia, serif' }}>Milk and Honey</span>

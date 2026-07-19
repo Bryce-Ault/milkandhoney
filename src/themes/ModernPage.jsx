@@ -6,7 +6,7 @@ function ModernNav() {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   return (
     <nav
-      className="fixed top-10 left-0 right-0 z-[100] flex items-center justify-between px-10 py-4 max-md:px-5 bg-[#0a0a0a] border-b border-[#181818]"
+      className="sticky top-10 left-0 right-0 z-[100] flex items-center justify-between px-10 py-4 max-md:px-5 bg-[#0a0a0a] border-b border-[#181818]"
       style={{ fontFamily: 'system-ui, sans-serif' }}
     >
       <div className="flex items-center gap-3">

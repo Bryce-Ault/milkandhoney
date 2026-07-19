@@ -34,7 +34,7 @@ export default function Gallery() {
               loading="lazy"
               className="w-full h-auto block transition-transform duration-500 group-hover:scale-[1.04]"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(20,10,4,0.7)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+            <div className="absolute inset-0 bg-gradient-to-t from-[rgba(74,50,8,0.7)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
               <span className="text-cream text-[0.9rem] italic px-4 py-3">{photo.caption}</span>
             </div>
           </div>
@@ -43,7 +43,7 @@ export default function Gallery() {
 
       {lightbox !== null && (
         <div
-          className="fixed inset-0 z-[200] bg-[rgba(10,5,2,0.92)] flex items-center justify-center cursor-pointer"
+          className="fixed inset-0 z-[200] bg-[rgba(58,38,8,0.92)] flex items-center justify-center cursor-pointer"
           onClick={() => setLightbox(null)}
         >
           <button

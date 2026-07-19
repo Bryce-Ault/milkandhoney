@@ -1,0 +1,90 @@
+const cardStyle = {
+  background: 'rgba(255,255,255,0.03)',
+  border: '1px solid rgba(212,169,106,0.18)',
+  borderRadius: '14px',
+  padding: '28px',
+}
+
+export default function NextStepsPage() {
+  return (
+    <div style={{
+      minHeight: '100vh',
+      background: '#0c0704',
+      color: '#e9ddc9',
+      fontFamily: 'system-ui, sans-serif',
+    }}>
+      <div style={{ maxWidth: '760px', margin: '0 auto', padding: '40px 24px 80px' }}>
+
+        <p style={{
+          color: '#d4a96a', fontSize: '0.72rem', letterSpacing: '0.18em',
+          textTransform: 'uppercase', marginBottom: '10px', fontWeight: 600,
+        }}>
+          Next Steps
+        </p>
+        <h1 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: '14px', lineHeight: 1.2 }}>
+          Here's how this works
+        </h1>
+        <p style={{ color: '#b89a78', fontSize: '1rem', lineHeight: 1.6, marginBottom: '40px' }}>
+          Pick whichever design above feels right for the shop — that's the starting point.
+          Everything below explains what you'll be able to manage yourself once the site is live,
+          and what it costs.
+        </p>
+
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginBottom: '40px' }}>
+
+          <div style={cardStyle}>
+            <h2 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '10px', color: '#f0e4cf' }}>
+              You can update the site yourself — no code needed
+            </h2>
+            <p style={{ color: '#b89a78', lineHeight: 1.65, marginBottom: '10px' }}>
+              You'll get your own simple dashboard where you can change:
+            </p>
+            <ul style={{ color: '#b89a78', lineHeight: 1.8, paddingLeft: '20px', margin: 0 }}>
+              <li>Hours of operation</li>
+              <li>Menu items, descriptions, and prices</li>
+              <li>Contact info — phone number, email, and address</li>
+              <li>Your map location — where customers get directed on Google Maps</li>
+              <li>Photos — the gallery and any menu item pictures</li>
+            </ul>
+            <p style={{ color: '#8a7255', lineHeight: 1.65, marginTop: '10px', fontSize: '0.92rem' }}>
+              You log in, fill out a simple form, and hit publish. Changes show up on the live site right away.
+            </p>
+          </div>
+
+          <div style={cardStyle}>
+            <h2 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '10px', color: '#f0e4cf' }}>
+              Cost
+            </h2>
+            <p style={{ color: '#d4a96a', fontSize: '1.6rem', fontWeight: 700, marginBottom: '10px' }}>
+              $250 flat
+            </p>
+            <p style={{ color: '#b89a78', lineHeight: 1.65, marginBottom: '10px' }}>
+              Covers the full site build, the design, and setting up your self-service dashboard
+              for hours, menu, photos, contact info, and map location.
+            </p>
+            <p style={{ color: '#8a7255', lineHeight: 1.65, fontSize: '0.92rem' }}>
+              Not included: your domain name (typically $10–20/year, paid to a registrar directly —
+              you own it, not me). Hosting itself is free.
+            </p>
+          </div>
+
+          <div style={cardStyle}>
+            <h2 style={{ fontSize: '1.15rem', fontWeight: 700, marginBottom: '10px', color: '#f0e4cf' }}>
+              Free support for 12 months
+            </h2>
+            <p style={{ color: '#b89a78', lineHeight: 1.65 }}>
+              For a year after launch, I'll fix bugs and handle small adjustments to the site's
+              existing content or functionality at no charge. New features, added pages, or a
+              redesign would be quoted separately.
+            </p>
+          </div>
+
+        </div>
+
+        <p style={{ color: '#8a7255', fontSize: '0.85rem', lineHeight: 1.6 }}>
+          Once you've picked a design, just let me know and we'll get started.
+        </p>
+      </div>
+    </div>
+  )
+}

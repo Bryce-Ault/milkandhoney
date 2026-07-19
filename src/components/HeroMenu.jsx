@@ -43,7 +43,7 @@ export default function HeroMenu() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: 'linear-gradient(to bottom, rgba(10,5,2,0.3) 0%, rgba(10,5,2,0.55) 40%, rgba(10,5,2,0.75) 100%)' }}
+          style={{ background: 'linear-gradient(to bottom, rgba(58,38,8,0.3) 0%, rgba(58,38,8,0.55) 40%, rgba(58,38,8,0.75) 100%)' }}
         />
       </div>
 
@@ -60,7 +60,7 @@ export default function HeroMenu() {
         </div>
 
         {/* Menu Card */}
-        <div className="w-full bg-[rgba(20,10,4,0.78)] backdrop-blur-[12px] border border-[rgba(212,169,106,0.25)] rounded-2xl px-12 py-10 max-[480px]:px-5 max-[480px]:py-6">
+        <div className="w-full bg-[rgba(74,50,8,0.78)] backdrop-blur-[12px] border border-[rgba(212,169,106,0.25)] rounded-2xl px-12 py-10 max-[480px]:px-5 max-[480px]:py-6">
           <h2 className="text-center text-gold text-[1.8rem] tracking-[0.1em] uppercase mb-3">Our Menu</h2>
           <div className="w-[60px] h-[2px] bg-gold mx-auto mb-8" />
 

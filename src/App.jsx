@@ -10,6 +10,7 @@ import MinimalistPage from './themes/MinimalistPage'
 import RusticPage from './themes/RusticPage'
 import ModernPage from './themes/ModernPage'
 import GoldenPage from './themes/GoldenPage'
+import NextStepsPage from './themes/NextStepsPage'
 import './App.css'
 
 function OriginalPage() {
@@ -36,6 +37,7 @@ export default function App() {
       {theme === 'rustic'     && <RusticPage />}
       {theme === 'modern'     && <ModernPage />}
       {theme === 'golden'     && <GoldenPage />}
+      {theme === 'next-steps' && <NextStepsPage />}
     </>
   )
 }

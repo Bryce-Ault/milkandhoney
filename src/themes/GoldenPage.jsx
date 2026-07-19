@@ -5,7 +5,7 @@ import { photos } from '../data/photos'
 function GoldenNav() {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   return (
-    <nav className="fixed top-10 left-0 right-0 z-[100] flex items-center justify-between px-10 py-[0.9rem] max-md:px-5 max-md:py-[0.8rem] bg-[rgba(9,7,0,0.88)] backdrop-blur-[8px]">
+    <nav className="sticky top-10 left-0 right-0 z-[100] flex items-center justify-between px-10 py-[0.9rem] max-md:px-5 max-md:py-[0.8rem] bg-[rgba(9,7,0,0.88)] backdrop-blur-[8px]">
       <div className="flex items-center gap-2">
         <span className="text-[1.6rem] text-[#f5c518]">&#9749;</span>
         <span className="text-[1.1rem] max-md:text-[0.9rem] font-bold tracking-[0.03em] text-[#fff8d6]" style={{ fontFamily: 'Georgia, serif' }}>Milk and Honey</span>

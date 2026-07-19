@@ -5,7 +5,7 @@ import { photos } from '../data/photos'
 function MinNav() {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   return (
-    <nav className="fixed top-10 left-0 right-0 z-[100] flex items-center justify-between px-10 py-4 max-md:px-5 bg-[#fafaf8] border-b border-[#e5ddd5]" style={{ fontFamily: 'system-ui, sans-serif' }}>
+    <nav className="sticky top-10 left-0 right-0 z-[100] flex items-center justify-between px-10 py-4 max-md:px-5 bg-[#fafaf8] border-b border-[#e5ddd5]" style={{ fontFamily: 'system-ui, sans-serif' }}>
       <div className="flex items-center gap-2">
         <span className="text-[1.3rem] text-[#92795a]">&#9749;</span>
         <span className="text-[1rem] font-bold tracking-[0.02em] text-[#1c1917]" style={{ fontFamily: 'Georgia, serif' }}>Milk and Honey</span>
