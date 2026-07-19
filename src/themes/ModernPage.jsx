@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { menuItems } from '../data/menuItems'
 import { photos } from '../data/photos'
+import SocialLinks from '../components/SocialLinks'
 
 function ModernNav() {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -184,6 +185,7 @@ export default function ModernPage() {
             <span className="text-[#e07b39] text-[1.2rem]">&#9749;</span>
             <div className="w-8 h-[1px] bg-[#e07b39]" />
           </div>
+          <SocialLinks color="#555" hoverColor="#e07b39" />
           <p className="text-[#333] text-[0.78rem] uppercase tracking-[0.05em]">© 2026 Milk and Honey &nbsp;|&nbsp; 247 W Main St, Morristown, TN 37814</p>
           <p className="text-[#242424] text-[0.7rem] italic">Made with love (and a lot of espresso).</p>
         </div>

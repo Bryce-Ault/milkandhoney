@@ -33,7 +33,7 @@ function MenuItem({ item }) {
 
 export default function HeroMenu() {
   return (
-    <section id="menu" className="relative min-h-screen flex flex-col items-center pt-20">
+    <section id="menu" className="relative min-h-screen flex flex-col items-center">
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden">
         <img

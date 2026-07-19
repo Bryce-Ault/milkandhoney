@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { menuItems } from '../data/menuItems'
 import { photos } from '../data/photos'
+import SocialLinks from '../components/SocialLinks'
 
 function MinNav() {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -163,6 +164,7 @@ export default function MinimalistPage() {
       <footer className="bg-[#1c1917] text-center py-8 px-4">
         <div className="flex flex-col items-center gap-[0.4rem]">
           <span className="text-[1.5rem] text-[#c8ac88]">&#9749;</span>
+          <SocialLinks color="#9c8c7a" hoverColor="#c8ac88" />
           <p className="text-[0.83rem] text-[#9c8c7a]">© 2026 Milk and Honey &nbsp;|&nbsp; 247 W Main St, Morristown, TN 37814</p>
           <p className="text-[0.76rem] italic text-[#5a4d40]">Made with love (and a lot of espresso).</p>
         </div>

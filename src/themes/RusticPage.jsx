@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { menuItems } from '../data/menuItems'
 import { photos } from '../data/photos'
+import SocialLinks from '../components/SocialLinks'
+import { MapPinIcon, ClockIcon, PhoneIcon } from '../components/InfoIcons'
 
 function RusticNav() {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -151,12 +153,12 @@ export default function RusticPage() {
         <div className="grid grid-cols-[300px_1fr] max-md:grid-cols-1 gap-10 max-w-[1100px] mx-auto px-6">
           <div className="flex flex-col gap-7">
             {[
-              { label: '&#128205; Address', lines: ['247 W Main St', 'Morristown, TN 37814'] },
-              { label: '&#128336; Hours', rows: [['Mon – Fri','6:30 am – 7:00 pm'],['Saturday','7:00 am – 8:00 pm'],['Sunday','8:00 am – 5:00 pm']] },
-              { label: '&#128222; Contact', lines: ['(423) 555-0182','hello@roastedridge.com'] },
+              { label: 'Address', Icon: MapPinIcon, lines: ['247 W Main St', 'Morristown, TN 37814'] },
+              { label: 'Hours', Icon: ClockIcon, rows: [['Mon – Fri','6:30 am – 7:00 pm'],['Saturday','7:00 am – 8:00 pm'],['Sunday','8:00 am – 5:00 pm']] },
+              { label: 'Contact', Icon: PhoneIcon, lines: ['(423) 555-0182','hello@roastedridge.com'] },
             ].map(block => (
               <div key={block.label}>
-                <h3 className="text-[#3a5c45] text-[0.7rem] uppercase tracking-[0.15em] mb-3 pb-2 border-b border-[#e8d5b7]" dangerouslySetInnerHTML={{ __html: block.label }} />
+                <h3 className="flex items-center gap-2 text-[#3a5c45] text-[0.7rem] uppercase tracking-[0.15em] mb-3 pb-2 border-b border-[#e8d5b7]"><block.Icon /> {block.label}</h3>
                 {block.lines?.map(l => <p key={l} className="text-[#3d2b1f] text-[0.93rem] leading-[1.7]">{l}</p>)}
                 {block.rows?.map(([d,t]) => (
                   <div key={d} className="flex justify-between text-[#3d2b1f] text-[0.88rem] py-[0.3rem]">
@@ -176,6 +178,7 @@ export default function RusticPage() {
       <footer className="bg-[#2d1f12] text-center py-8 px-4">
         <div className="flex flex-col items-center gap-[0.5rem]">
           <Divider />
+          <SocialLinks color="#8b6e52" hoverColor="#e8d5b7" />
           <p className="text-[0.83rem] text-[#e8d5b7] mt-2">© 2026 Milk and Honey &nbsp;|&nbsp; 247 W Main St, Morristown, TN 37814</p>
           <p className="text-[0.76rem] italic text-[#8b6e52]">Made with love (and a lot of espresso).</p>
         </div>

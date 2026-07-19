@@ -1,3 +1,5 @@
+import { MapPinIcon, ClockIcon, PhoneIcon } from './InfoIcons'
+
 export default function FindUs() {
   const mapSrc = 'https://maps.google.com/maps?q=247+W+Main+St,+Morristown,+TN+37814&output=embed'
 
@@ -11,13 +13,13 @@ export default function FindUs() {
       <div className="grid grid-cols-[340px_1fr] max-md:grid-cols-1 gap-10 max-w-[1200px] mx-auto px-6">
         <div className="flex flex-col gap-8">
           <div>
-            <h3 className="text-[1rem] uppercase tracking-[0.1em] text-medium mb-2">&#128205; Address</h3>
+            <h3 className="flex items-center gap-2 text-[1rem] uppercase tracking-[0.1em] text-medium mb-2"><MapPinIcon /> Address</h3>
             <p className="text-coffee-brown text-base leading-[1.7]">247 W Main St</p>
             <p className="text-coffee-brown text-base leading-[1.7]">Morristown, TN 37814</p>
           </div>
 
           <div>
-            <h3 className="text-[1rem] uppercase tracking-[0.1em] text-medium mb-2">&#128336; Hours</h3>
+            <h3 className="flex items-center gap-2 text-[1rem] uppercase tracking-[0.1em] text-medium mb-2"><ClockIcon /> Hours</h3>
             <ul className="list-none flex flex-col gap-[0.35rem]">
               <li className="flex justify-between text-coffee-brown text-[0.95rem]">
                 <span>Mon – Fri</span><span>6:30 am – 7:00 pm</span>
@@ -32,7 +34,7 @@ export default function FindUs() {
           </div>
 
           <div>
-            <h3 className="text-[1rem] uppercase tracking-[0.1em] text-medium mb-2">&#128222; Contact</h3>
+            <h3 className="flex items-center gap-2 text-[1rem] uppercase tracking-[0.1em] text-medium mb-2"><PhoneIcon /> Contact</h3>
             <p className="text-coffee-brown text-base leading-[1.7]">(423) 555-0182</p>
             <p className="text-coffee-brown text-base leading-[1.7]">hello@roastedridge.com</p>
           </div>

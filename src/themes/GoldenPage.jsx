@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { menuItems } from '../data/menuItems'
 import { photos } from '../data/photos'
+import SocialLinks from '../components/SocialLinks'
+import { MapPinIcon, ClockIcon, PhoneIcon } from '../components/InfoIcons'
 
 function GoldenNav() {
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -196,12 +198,12 @@ export default function GoldenPage() {
         <div className="grid grid-cols-[340px_1fr] max-md:grid-cols-1 gap-10 max-w-[1200px] mx-auto px-6">
           <div className="flex flex-col gap-8">
             <div>
-              <h3 className="text-[1rem] uppercase tracking-[0.1em] text-[#c8a840] mb-2">&#128205; Address</h3>
+              <h3 className="flex items-center gap-2 text-[1rem] uppercase tracking-[0.1em] text-[#c8a840] mb-2"><MapPinIcon /> Address</h3>
               <p className="text-[#fff8d6] text-base leading-[1.7]">247 W Main St</p>
               <p className="text-[#fff8d6] text-base leading-[1.7]">Morristown, TN 37814</p>
             </div>
             <div>
-              <h3 className="text-[1rem] uppercase tracking-[0.1em] text-[#c8a840] mb-2">&#128336; Hours</h3>
+              <h3 className="flex items-center gap-2 text-[1rem] uppercase tracking-[0.1em] text-[#c8a840] mb-2"><ClockIcon /> Hours</h3>
               <ul className="list-none flex flex-col gap-[0.35rem]">
                 {[['Mon – Fri','6:30 am – 7:00 pm'],['Saturday','7:00 am – 8:00 pm'],['Sunday','8:00 am – 5:00 pm']].map(([d,t]) => (
                   <li key={d} className="flex justify-between text-[#fff8d6] text-[0.95rem]">
@@ -211,7 +213,7 @@ export default function GoldenPage() {
               </ul>
             </div>
             <div>
-              <h3 className="text-[1rem] uppercase tracking-[0.1em] text-[#c8a840] mb-2">&#128222; Contact</h3>
+              <h3 className="flex items-center gap-2 text-[1rem] uppercase tracking-[0.1em] text-[#c8a840] mb-2"><PhoneIcon /> Contact</h3>
               <p className="text-[#fff8d6] text-base leading-[1.7]">(423) 555-0182</p>
               <p className="text-[#fff8d6] text-base leading-[1.7]">hello@roastedridge.com</p>
             </div>
@@ -238,6 +240,7 @@ export default function GoldenPage() {
       <footer className="bg-[#050400] text-center py-8 px-4">
         <div className="flex flex-col items-center gap-[0.4rem]">
           <span className="text-[1.8rem] text-[#f5c518]">&#9749;</span>
+          <SocialLinks color="#c8a840" hoverColor="#f5c518" />
           <p className="text-[0.9rem] text-[#c8a840]">© 2026 Milk and Honey &nbsp;|&nbsp; 247 W Main St, Morristown, TN 37814</p>
           <p className="text-[0.82rem] italic text-[#4a3808]">Made with love (and a lot of espresso).</p>
         </div>
