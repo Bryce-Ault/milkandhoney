@@ -37,9 +37,10 @@ export default function NextStepsPage() {
               You can update the site yourself — no code needed
             </h2>
             <p style={{ color: '#b89a78', lineHeight: 1.65, marginBottom: '10px' }}>
-              You'll get your own simple dashboard (a tool called{' '}
-              <a href="https://www.sanity.io" target="_blank" rel="noopener noreferrer" style={{ color: '#d4a96a', textDecoration: 'underline' }}>Sanity</a>{' '}
-              — free for a site this size) where you can change:
+              You'll get your own private login to a website called{' '}
+              <a href="https://www.sanity.io" target="_blank" rel="noopener noreferrer" style={{ color: '#d4a96a', textDecoration: 'underline' }}>Sanity</a>
+              {' '}— think of it like your control panel, separate from the main site, made just
+              for making these edits. Once you're logged in, that's where you go to change:
             </p>
             <ul style={{ color: '#b89a78', lineHeight: 1.8, paddingLeft: '20px', margin: 0 }}>
               <li>Hours of operation</li>
@@ -50,6 +51,11 @@ export default function NextStepsPage() {
             </ul>
             <p style={{ color: '#8a7255', lineHeight: 1.65, marginTop: '10px', fontSize: '0.92rem' }}>
               You log in, fill out a simple form, and hit publish. Changes show up on the live site right away.
+            </p>
+            <p style={{ color: '#8a7255', lineHeight: 1.65, marginTop: '10px', fontSize: '0.92rem' }}>
+              Cost: Sanity is free to use for a single small-business site like this one. You
+              wouldn't start paying unless the business grew a lot — many more staff logging in,
+              or way more traffic than a coffee shop typically gets.
             </p>
           </div>
 
