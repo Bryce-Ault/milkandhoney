@@ -17,19 +17,22 @@ export default function ThemeSwitcher({ theme, setTheme }) {
   }
 
   return (
-    <div style={{
-      position: 'sticky', top: 0, zIndex: 600,
-      height: '40px', background: '#0c0704',
-      display: 'flex', alignItems: 'center', justifyContent: 'center',
-      gap: '6px', borderBottom: '1px solid rgba(255,255,255,0.07)',
-      fontFamily: 'system-ui, sans-serif',
-    }}>
-      <span style={{ color: '#7a6040', fontSize: '0.62rem', letterSpacing: '0.18em', textTransform: 'uppercase', marginRight: '6px' }}>
+    <div
+      className="flex items-center gap-1.5 overflow-x-auto flex-nowrap justify-start md:justify-center px-3 md:px-0 [-webkit-overflow-scrolling:touch] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      style={{
+        position: 'sticky', top: 0, zIndex: 600,
+        height: '40px', background: '#0c0704',
+        borderBottom: '1px solid rgba(255,255,255,0.07)',
+        fontFamily: 'system-ui, sans-serif',
+      }}
+    >
+      <span className="shrink-0 whitespace-nowrap" style={{ color: '#7a6040', fontSize: '0.62rem', letterSpacing: '0.18em', textTransform: 'uppercase', marginRight: '6px' }}>
         Design:
       </span>
       {themes.map(t => (
         <label
           key={t.id}
+          className="shrink-0 whitespace-nowrap"
           style={{
             cursor: 'pointer',
             padding: '3px 13px',
@@ -55,12 +58,12 @@ export default function ThemeSwitcher({ theme, setTheme }) {
         </label>
       ))}
 
-      <span style={{ width: '1px', height: '18px', background: 'rgba(255,255,255,0.12)', margin: '0 4px' }} />
+      <span className="shrink-0" style={{ width: '1px', height: '18px', background: 'rgba(255,255,255,0.12)', margin: '0 4px' }} />
 
       {infoTabs.map(t => (
         <label
           key={t.id}
-          className="next-steps-tab"
+          className="next-steps-tab shrink-0 whitespace-nowrap"
           style={{
             cursor: 'pointer',
             padding: '4px 16px',

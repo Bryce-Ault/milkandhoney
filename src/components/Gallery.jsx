@@ -32,7 +32,7 @@ export default function Gallery() {
               src={photo.url}
               alt={photo.alt}
               loading="lazy"
-              className="w-full h-auto block transition-transform duration-500 group-hover:scale-[1.04]"
+              className="w-full aspect-[4/5] object-cover block transition-transform duration-500 group-hover:scale-[1.04]"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[rgba(74,50,8,0.7)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
               <span className="text-cream text-[0.9rem] italic px-4 py-3">{photo.caption}</span>

@@ -96,7 +96,7 @@ export default function MinimalistPage() {
               className="relative overflow-hidden rounded-lg mb-3 break-inside-avoid cursor-pointer group transition-all duration-300 hover:shadow-[0_4px_20px_rgba(28,25,23,0.14)] hover:-translate-y-[2px]"
               onClick={() => setLightbox(i)}
             >
-              <img src={photo.url} alt={photo.alt} loading="lazy" className="w-full h-auto block" />
+              <img src={photo.url} alt={photo.alt} loading="lazy" className="w-full aspect-[4/5] object-cover block" />
               <div className="absolute inset-0 bg-[rgba(28,25,23,0.52)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <span className="text-[#f8f5f0] text-[0.83rem] italic px-4 py-3">{photo.caption}</span>
               </div>
@@ -118,7 +118,7 @@ export default function MinimalistPage() {
 
       {/* Quote strip */}
       <div
-        className="relative h-[300px] bg-fixed bg-cover bg-center flex items-center justify-center overflow-hidden"
+        className="relative h-[300px] bg-fixed max-md:bg-scroll bg-cover bg-center flex items-center justify-center overflow-hidden"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1600&q=80')" }}
       >
         <div className="absolute inset-0 bg-[rgba(28,25,23,0.62)]" />

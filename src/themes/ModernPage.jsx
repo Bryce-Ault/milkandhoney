@@ -104,7 +104,7 @@ export default function ModernPage() {
               className="relative overflow-hidden mb-2 break-inside-avoid cursor-pointer group"
               onClick={() => setLightbox(i)}
             >
-              <img src={photo.url} alt={photo.alt} loading="lazy" className="w-full h-auto block transition-all duration-500 group-hover:brightness-[0.4]" />
+              <img src={photo.url} alt={photo.alt} loading="lazy" className="w-full aspect-[4/5] object-cover block transition-all duration-500 group-hover:brightness-[0.4]" />
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <span className="text-white text-[0.78rem] uppercase tracking-[0.1em] border border-white px-4 py-2">{photo.caption}</span>
               </div>
@@ -126,7 +126,7 @@ export default function ModernPage() {
 
       {/* Quote strip */}
       <div
-        className="relative h-[280px] bg-fixed bg-cover bg-center flex items-center justify-center overflow-hidden"
+        className="relative h-[280px] bg-fixed max-md:bg-scroll bg-cover bg-center flex items-center justify-center overflow-hidden"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1600&q=80')" }}
       >
         <div className="absolute inset-0 bg-[rgba(0,0,0,0.9)]" />

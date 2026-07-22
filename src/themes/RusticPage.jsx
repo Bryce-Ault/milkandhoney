@@ -109,7 +109,7 @@ export default function RusticPage() {
               className="relative overflow-hidden rounded-[8px] mb-4 break-inside-avoid cursor-pointer shadow-[0_2px_10px_rgba(61,43,31,0.14)] transition-all duration-300 hover:shadow-[0_6px_26px_rgba(61,43,31,0.28)] hover:-translate-y-[3px] group"
               onClick={() => setLightbox(i)}
             >
-              <img src={photo.url} alt={photo.alt} loading="lazy" className="w-full h-auto block transition-transform duration-500 group-hover:scale-[1.04]" />
+              <img src={photo.url} alt={photo.alt} loading="lazy" className="w-full aspect-[4/5] object-cover block transition-transform duration-500 group-hover:scale-[1.04]" />
               <div className="absolute inset-0 bg-gradient-to-t from-[rgba(61,43,31,0.75)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                 <span className="text-[#fef8ed] text-[0.83rem] italic px-4 py-3">{photo.caption}</span>
               </div>
@@ -131,7 +131,7 @@ export default function RusticPage() {
 
       {/* Quote strip */}
       <div
-        className="relative h-[320px] bg-fixed bg-cover bg-center flex items-center justify-center overflow-hidden"
+        className="relative h-[320px] bg-fixed max-md:bg-scroll bg-cover bg-center flex items-center justify-center overflow-hidden"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1600&q=80')" }}
       >
         <div className="absolute inset-0 bg-[rgba(72,36,12,0.65)]" />
