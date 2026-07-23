@@ -172,7 +172,7 @@ export default function GoldenPage() {
 
       {/* Parallax Strip */}
       <div
-        className="relative h-[380px] bg-fixed bg-cover bg-center flex items-center justify-center overflow-hidden"
+        className="relative h-[380px] bg-fixed max-md:bg-scroll bg-cover bg-center flex items-center justify-center overflow-hidden"
         style={{ backgroundImage: "url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1600&q=80')" }}
       >
         <div className="absolute inset-0 bg-[rgba(6,5,0,0.64)]" />
